@@ -6,6 +6,11 @@ import { CardHeaderProjects } from "../CardHeaderProjects"
 
 import { RiArrowDownSLine } from "react-icons/ri"
 
+import origamidImg from "../../assets/origamidLogo.png"
+import rocketseatImg from "../../assets/rocketseatLogo.png"
+import LogoImage from "../../assets/lucasLogo.png";
+
+
 export function Header(){
     const html = window.document.activeElement
     const outside = 'data-outside'
@@ -20,7 +25,7 @@ export function Header(){
             },0)
             
             function handlOutsideClick(e) {
-                if(!list.contains(e.target) || e.target == list) {
+                if(!list.contains(e.target)) {
                     setTimeout(() => {
                         document.querySelector('#navMainMenuTrigger').checked = false;
                         list.removeAttribute(outside)
@@ -72,9 +77,24 @@ export function Header(){
                         </ul>
                         <ul className="menu">
                             <div>
-                                <CardHeaderProjects/>
-                                <CardHeaderProjects/>
-                                <CardHeaderProjects/>
+                                <CardHeaderProjects 
+                                    bgIMG={origamidImg} 
+                                    title="Origamid" 
+                                    description="Todos os projetos feitos aqui foram com conhecimentos adiquiridos no curso da origamid."
+                                    moreInfo="O curso da origamid é com foco em front-end e web design"    
+                                />
+                                <CardHeaderProjects 
+                                    bgIMG={LogoImage} 
+                                    title="Projetos Pessoais" 
+                                    description="Os projetos pertencetes nesta parte são de autenticidade minha."
+                                    moreInfo=""    
+                                />
+                                <CardHeaderProjects 
+                                    bgIMG={rocketseatImg} 
+                                    title="Rocketseat" 
+                                    description="Aqui existem projetos desenvolvidos durante o curso e projetos desenvolvido como desafios."
+                                    moreInfo="Curso com foco em faça você mesmo, com bastante prática "    
+                                />
                             </div>
                         </ul>
                     </MenuLabel>

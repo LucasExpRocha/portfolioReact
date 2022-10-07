@@ -23,6 +23,7 @@ export const Container = styled(Link)`
     }
 
     > section {
+        overflow-y: auto;
         position: absolute;
         left: 10%;
         top: 10%;
@@ -37,6 +38,11 @@ export const Container = styled(Link)`
         box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 
         transition: all .3s;
+
+        &::-webkit-scrollbar {
+            width: 1px;
+            background-color: transparent;
+        }
     }
 
     transition: all .3s;
