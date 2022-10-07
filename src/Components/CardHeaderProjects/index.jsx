@@ -1,13 +1,14 @@
 import { Container } from './styles'
-import backgroundIMG from "../../assets/construction.jpeg"
 
-export function CardHeaderProjects(){
+export function CardHeaderProjects({bgIMG, title, description, moreInfo}){
     return(
         <Container>
-            <img src={backgroundIMG} alt="" />
+            <img src={bgIMG} alt="altImg" />
             <section>
-                <h1>Em construção</h1>
-                <p>Componente em construção...</p>
+                <h1>{title}</h1>
+                <p>{description}</p>
+                <br />
+                <p>{moreInfo}</p>
             </section>
         </Container>
     )

@@ -116,7 +116,6 @@ export const Navigation = styled.nav`
         }
 
         > .navigationBar:hover,
-        > #navMainMenuTrigger:hover ~ .navigationBar,
         > #navMainMenuTrigger:checked ~ .navigationBar  {
             display: block;
             position: absolute;
@@ -170,7 +169,6 @@ export const MenuLabel = styled.li`
         }
     
         > #navMenuLabel:checked ~ .menuMobile,
-        > #navMenuLabel ~ .menuMobile:hover,
         &:hover ~ .menuMobile {
             display: block;
 
@@ -178,7 +176,7 @@ export const MenuLabel = styled.li`
                 background: ${({theme}) => theme.COLORS.LIST};
             }
             li:hover {
-                filter: saturate(8);
+                filter: saturate(1.3);
             }
         }
     }
@@ -207,8 +205,6 @@ export const MenuLabel = styled.li`
             display: block;
 
             div {
-                width: 100vw;
-                height: 15rem;
                 padding: .5rem 3rem;
 
                 display: flex;
