@@ -4,19 +4,20 @@ import LogoImage from "../../assets/logo.png";
 
 export const Container = styled.header`
     width: 100%;
-    background-color: #ACE566;
-
+    height: 3rem;
+    padding: 0rem 2rem;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    
+    background: linear-gradient(#F3FBE9, #ACE566) padding-box,
+    linear-gradient(to right, rgba(149, 114, 252, 1) 10%, rgba(67, 231, 173, 1) 50%, rgba(149,114,252,1) 90%) border-box;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-bottom: 3px solid transparent;
 
     transition: all 0.5s;
-
-    height: 3rem;
-    padding: 0rem 2rem;
-
+    
     @media (min-width: 540px) {
         padding: 0rem 3rem;
     }
@@ -28,11 +29,13 @@ export const Container = styled.header`
     @media (min-width: 1040px) {
     padding: 0 5rem;
     }
+    
 `;
 
 export const Logo = styled.div`
     width: 7rem;
     height: 2rem;
+
     object-fit: cover;
     background: url(${LogoImage}) no-repeat center center;
 `;
@@ -43,10 +46,13 @@ export const Navigation = styled.nav`
     display: flex;
     align-items: center;
 
-    > input {display: none;}
+    > input {
+        display: none;
+    }
 
     > ul {
         display: none;
+
         a {
             font-weight: 500;
             color: ${({theme}) => theme.COLORS.TEXT};
@@ -54,20 +60,28 @@ export const Navigation = styled.nav`
     }
 
     @media (max-width: 1039px) {
-        > ul > li {
-            background-color: #DBF4BE;
-            word-wrap: break-word;
-            a {
-                width: 100%;
-                padding: .5rem 1rem;
-            }
-            &:hover {
-                filter: contrast(1.1);
+        > ul {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 10%, rgba(125, 125, 125, 1) 50%, rgba(0, 0, 0, 0.5) 90%) border-box;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            border-bottom: 2px solid transparent;
+
+            li {
+                background: linear-gradient(#ACE566, #C4ED92) padding-box;
+                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+                
+                a {
+                    width: 100%;
+                    padding: .5rem 1rem;
+                }
+                &:hover {
+                    filter: contrast(1.1);
+                }
             }
         }
 
         > label {
             height: 3rem;
+
             display: flex;
             align-items: center;
             gap: .5rem;
@@ -82,8 +96,10 @@ export const Navigation = styled.nav`
             &::before {
                 content: '';
                 display: inline-block;
+
                 height: 2px;
                 width: 14px;
+
                 background: #000;
                 box-shadow: 0 4px #000, 0 -4px #000;
                 transition: all .3s;
@@ -104,7 +120,7 @@ export const Navigation = styled.nav`
         > #navMainMenuTrigger:checked ~ .navigationBar  {
             display: block;
             position: absolute;
-            top: 3rem;
+            top: 2.9rem;
             left: 0;
             right: 0;  
         }
@@ -113,20 +129,6 @@ export const Navigation = styled.nav`
     @media (min-width: 1040px) {
         > label {
             display: none;
-        }
-
-
-        > #navMenuLabel:checked ~ ul {
-            position: relative;
-            top: 0;
-            display: flex;
-
-            li {
-                background-color: transparent;
-                padding: 0;
-                border-bottom: none;
-            }
-
         }
 
         > ul {
@@ -145,10 +147,12 @@ export const MenuLabel = styled.li`
     > label {
         display: flex;
         align-items: center;
+        cursor: pointer;
+
     }
 
     @media (max-width: 1039px) {
-        padding: 0 !important;
+        padding: 0;
 
         > label {
             padding: .5rem 1rem;
@@ -156,22 +160,26 @@ export const MenuLabel = styled.li`
             font-weight: 500;
         }
 
-        > #navMenuLabel:checked ~ label{
-            svg {
-                transform: rotate(180deg);
-                transition: all .3s;
-            }
+        > #navMenuLabel:checked ~ label > svg {
+            transform: rotate(180deg);
+            transition: all .3s;
         }
 
         svg {
-                transition: all .3s;
+            transition: all .3s;
         }
     
         > #navMenuLabel:checked ~ .menuMobile,
         > #navMenuLabel ~ .menuMobile:hover,
         &:hover ~ .menuMobile {
             display: block;
-            position: static;
+
+            li {
+                background: ${({theme}) => theme.COLORS.LIST};
+            }
+            li:hover {
+                filter: saturate(8);
+            }
         }
     }
     
@@ -179,20 +187,17 @@ export const MenuLabel = styled.li`
 
         > label {
             height: 3rem;
-            align-items: center;
             font-weight: 500;
         }
 
-        > #navMenuLabel:checked ~ label,
-        > #navMenuLabel:hover ~ label{
-            svg {
-                transform: rotate(180deg);
-                transition: all .3s;
-            }
+        > #navMenuLabel:checked ~ label > svg,
+        > #navMenuLabel:hover ~ label > svg {
+            transform: rotate(180deg);
+            transition: all .3s;
         }
 
         svg {
-                transition: all .3s;
+            transition: all .3s;
         }
 
         > #navMenuLabel:checked ~ .menu,
@@ -202,12 +207,18 @@ export const MenuLabel = styled.li`
             display: block;
 
             div {
-                position: absolute;
                 width: 100vw;
-                top: 3rem;
+                height: 15rem;
+                padding: .5rem 3rem;
+
+                display: flex;
+
+                position: absolute;
+                top: 2.8rem;
                 left: 0;
                 right: 0;
-                background-color: #DBF4BE;
+
+                background: linear-gradient(#ACE566 10%, #C9CDCF 20%, rgba(255, 255, 255, 0)) padding-box;
             }
         }
     }
