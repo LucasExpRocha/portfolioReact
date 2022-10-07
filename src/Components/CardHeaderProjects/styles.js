@@ -16,7 +16,7 @@ export const Container = styled(Link)`
         object-fit: cover;
 
         width: 80%;
-        height: 100%;
+        height: 13rem;
         border-radius: 1rem;
 
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;

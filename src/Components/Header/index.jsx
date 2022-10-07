@@ -9,11 +9,11 @@ import { RiArrowDownSLine } from "react-icons/ri"
 export function Header(){
     const html = window.document.activeElement
     const outside = 'data-outside'
+    const clickEvents = ['touchstart', 'click']
     
     function clickOutSideSmallWindow (){
         let list = document.querySelector('.navigationBar')
         if(!document.querySelector('#navMainMenuTrigger').checked){
-            console.log('init')
             setTimeout(() => {
                 html.addEventListener("click", handlOutsideClick)
                 list.setAttribute(outside, '')
@@ -33,10 +33,9 @@ export function Header(){
 
     function clickOutSideLargeWindow (){
         let menu = document.querySelector('.menu')
-        
         if(!menu.hasAttribute(outside)){
             setTimeout(() => {
-                html.addEventListener("click", handlOutsideClick)
+                clickEvents.forEach(e => html.addEventListener(e, handlOutsideClick))
                 menu.setAttribute(outside, '')
             },100)
             
@@ -45,7 +44,7 @@ export function Header(){
                     setTimeout(() => {
                         document.querySelector('#navMenuLabel').checked = false;
                         menu.removeAttribute(outside)
-                        html.removeEventListener("click", handlOutsideClick)
+                        clickEvents.forEach(e => html.removeEventListener(e, handlOutsideClick))
                     },0)
                 }
             }
@@ -61,18 +60,11 @@ export function Header(){
                 <input type="checkbox" name="" id="navMainMenuTrigger" />
                 <label onClick={clickOutSideSmallWindow} htmlFor="navMainMenuTrigger"><span>Menu</span></label>
                 <ul className="navigationBar" role="navigation">
-
                     <List address='/' title='Inicio'/>
                     <List address='/' title='Sobre'/>
                     <MenuLabel>
                         <input type="checkbox" name="" id="navMenuLabel" />
-                        <label
-                            onClick={clickOutSideLargeWindow}
-                            htmlFor="navMenuLabel"
-                        >
-                                <span>Projetos</span>
-                                <RiArrowDownSLine size={20}/>
-                        </label>
+                        <label onClick={clickOutSideLargeWindow} htmlFor="navMenuLabel"><span>Projetos</span><RiArrowDownSLine size={20}/></label>
                         <ul className="menuMobile">
                             <List address='/' title='Curso Explorer'/>
                             <List address='/' title='Curso Origamid'/>
