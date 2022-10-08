@@ -6,52 +6,60 @@ export const Container = styled(Link)`
     max-height: 15rem;
     padding: .5rem;
 
-    display: grid;
-    grid-template-columns: 1fr ;
-
     position: relative;
 
     > img {
-        grid-area: 0/2;
         object-fit: cover;
 
-        width: 80%;
+        width: 100%;
         height: 13rem;
         border-radius: 1rem;
 
-        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        background-color: rgba(255, 255, 255, 0.5);
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     }
 
     > section {
-        overflow-y: auto;
-        position: absolute;
-        left: 10%;
-        top: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 
-        height: 80%;
+        position: absolute;
+
+        top: 50%;
+
         border-radius: 1rem;
         padding: 1rem;
 
-        width: 80%;
-
-        background-color: rgba(255, 255, 255, 0.8);
         box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+        background-color: rgba(255, 255, 255, 0.8);
+        backface-visibility: hidden;
 
-        transition: all .3s;
+
+        transform: rotateY(180deg);
+        transition: all .5s cubic-bezier(0.2,0.5,0.5,1);
+
+        color: black;
 
         &::-webkit-scrollbar {
-            width: 1px;
-            background-color: transparent;
+            inset: 0;
+
+            width: 100%;
+            height: 100%;
+
+            transform: rotateY(0def);
         }
     }
 
     transition: all .3s;
 
     &:hover {
-        transform: scale(1.05);
         section {
-            width: 90%;
-            left: 0;
+            width: 100%;
+            opacity: 1;
+            inset: 0;
+            transform: rotateX(0deg);
         }
     }
 `;

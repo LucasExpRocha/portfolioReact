@@ -6,6 +6,10 @@ export function Home(){
     return (
         <Container>
             <Header/>
+            <div>
+                <main>
+                </main>
+            </div>
         </Container>
     )
 }

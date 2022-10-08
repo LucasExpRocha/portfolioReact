@@ -7,8 +7,8 @@ export function List({title, address, icon: Icon, ...rest}){
         <Container {...rest}>
             <Link to={address}>
                 {title}
+                {Icon && <Icon size={20}/>}
             </Link>
-            {Icon && <Icon size={20}/>}
         </Container>
     )
 }

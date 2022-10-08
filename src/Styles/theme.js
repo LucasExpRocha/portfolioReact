@@ -1,9 +1,9 @@
 export default {
   COLORS: {
-    BACKGROUND: "#F1F2F3",
+    BACKGROUND: "#404040",
 
     LIST: '#DBF4BE',
     LIST_LIGHT: '#E6E8FF',
-    TEXT: "#000",
+    TEXT: "#fff",
   }
 }

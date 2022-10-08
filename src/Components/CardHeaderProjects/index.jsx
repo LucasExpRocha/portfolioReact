@@ -1,6 +1,6 @@
 import { Container } from './styles'
 
-export function CardHeaderProjects({bgIMG, title, description, moreInfo}){
+export function CardHeaderProjects({bgIMG, title, description}){
     return(
         <Container>
             <img src={bgIMG} alt="altImg" />
@@ -8,7 +8,7 @@ export function CardHeaderProjects({bgIMG, title, description, moreInfo}){
                 <h1>{title}</h1>
                 <p>{description}</p>
                 <br />
-                <p>{moreInfo}</p>
+                <p>Clique para mais informações</p>
             </section>
         </Container>
     )

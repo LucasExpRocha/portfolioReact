@@ -1,20 +1,20 @@
 import styled from "styled-components";
-import LogoImage from "../../assets/logo.png";
+import LogoImage from "../../assets/logo.svg";
 
 
 export const Container = styled.header`
     width: 100%;
-    height: 3rem;
+    height: 4rem;
     padding: 0rem 2rem;
     
     display: flex;
     justify-content: space-between;
     align-items: center;
     
-    background: linear-gradient(#F3FBE9, #ACE566) padding-box,
+    background: linear-gradient(#0f171e, #0f171e) padding-box,
     linear-gradient(to right, rgba(149, 114, 252, 1) 10%, rgba(67, 231, 173, 1) 50%, rgba(149,114,252,1) 90%) border-box;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    border-bottom: 3px solid transparent;
+    border-bottom: 4px solid transparent;
 
     transition: all 0.5s;
     
@@ -33,7 +33,7 @@ export const Container = styled.header`
 `;
 
 export const Logo = styled.div`
-    width: 7rem;
+    width: 100%;
     height: 2rem;
 
     object-fit: cover;
@@ -61,26 +61,38 @@ export const Navigation = styled.nav`
 
     @media (max-width: 1039px) {
         > ul {
-            background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 10%, rgba(125, 125, 125, 1) 50%, rgba(0, 0, 0, 0.5) 90%) border-box;
-            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            margin-top: 1rem;
             border-bottom: 2px solid transparent;
 
+            background: #262626;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
             li {
-                background: linear-gradient(#ACE566, #C4ED92) padding-box;
+                height: 3rem;
                 box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
                 
+                label {
+                    display: flex;
+                    justify-content: center;
+                    height: 3rem;;
+                }
+
                 a {
                     width: 100%;
-                    padding: .5rem 1rem;
+                    padding: .5rem 1rem;    
+                    display: flex;
+                    justify-content: center;                
                 }
                 &:hover {
                     filter: contrast(1.1);
+                }
+                &:hover {
+                    background: #404040;
                 }
             }
         }
 
         > label {
-            height: 3rem;
 
             display: flex;
             align-items: center;
@@ -100,15 +112,12 @@ export const Navigation = styled.nav`
                 height: 2px;
                 width: 14px;
 
-                background: #000;
-                box-shadow: 0 4px #000, 0 -4px #000;
+                background: #fff;
+                box-shadow: 0 4px #fff, 0 -4px #fff;
                 transition: all .3s;
             }
 
-            &:hover::before {
-                box-shadow: 0 4px #000, 0 -4px #000;
-                transform: rotate(90deg);
-            }
+
         }
 
         > #navMainMenuTrigger:checked ~ label::before {
@@ -132,7 +141,7 @@ export const Navigation = styled.nav`
 
         > ul {
             display: flex;
-            gap: 1rem;
+            gap: 1.5rem;
         }   
     }
 `;
@@ -173,10 +182,10 @@ export const MenuLabel = styled.li`
             display: block;
 
             li {
-                background: ${({theme}) => theme.COLORS.LIST};
+                background: #404040;
             }
             li:hover {
-                filter: saturate(1.3);
+                filter: brightness(1.5);
             }
         }
     }
@@ -184,7 +193,7 @@ export const MenuLabel = styled.li`
     @media (min-width: 1040px) {
 
         > label {
-            height: 3rem;
+            height: 4rem;
             font-weight: 500;
         }
 
@@ -208,13 +217,14 @@ export const MenuLabel = styled.li`
                 padding: .5rem 3rem;
 
                 display: flex;
+                gap: 1rem;
 
                 position: absolute;
-                top: 2.8rem;
+                top: 3.7rem;
                 left: 0;
                 right: 0;
 
-                background: linear-gradient(#ACE566 10%, #C9CDCF 20%, rgba(255, 255, 255, 0)) padding-box;
+                background: linear-gradient(#0f171e 10%, rgba(255, 255, 255, 0)) padding-box;
             }
         }
     }
