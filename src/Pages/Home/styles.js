@@ -19,6 +19,7 @@ export const Container = styled.div`
         overflow-y: auto;
         
         padding: 2rem 1.5rem;
+        
 
         transition: all .3s;
 

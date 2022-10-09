@@ -7,7 +7,7 @@ export default createGlobalStyle`
         box-sizing: border-box;
     }
     body {
-        background-color: ${({theme}) => theme.COLORS.BACKGROUND};
+        background: ${({theme}) => theme.COLORS.BACKGROUND};
         color: ${({theme}) => theme.COLORS.TEXT};
 
         -webkit-font-smoothing: antialiased;
