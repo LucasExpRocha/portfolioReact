@@ -1,6 +1,6 @@
 export default {
   COLORS: {
-    BACKGROUND: "linear-gradient(to right, #333399, #ff00cc)",
+    BACKGROUND: "#29293d",
 
     LIST: '#DBF4BE',
     LIST_LIGHT: '#E6E8FF',

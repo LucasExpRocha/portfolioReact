@@ -6,10 +6,9 @@ export function Home(){
     return (
         <Container>
             <Header/>
-            <div>
-                <main>
-                </main>
-            </div>
+            <main>
+                <h1>Olá, meu nome é Lucas Rocha!</h1>
+            </main>
         </Container>
     )
 }

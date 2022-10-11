@@ -30,17 +30,12 @@ export const Container = styled.header`
     padding: 0 5rem;
     }
     
+    a {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
 `;
-
-export const Logo = styled.div`
-    width: 100%;
-    height: 2rem;
-
-    object-fit: cover;
-    background: url(${LogoImage}) no-repeat center center;
-`;
-
-
 
 export const Navigation = styled.nav`
     display: flex;

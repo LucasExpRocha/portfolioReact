@@ -1,4 +1,4 @@
-import { Container, Logo, Navigation, MenuLabel } from "./styles";
+import { Container, Navigation, MenuLabel } from "./styles";
 import { Link } from "react-router-dom";
 import { RiArrowDownSLine } from "react-icons/ri"
 import { FiHome, FiPhone, FiUserCheck } from "react-icons/fi"
@@ -10,6 +10,7 @@ import { CardHeaderProjects } from "../CardHeaderProjects"
 import origamidImg from "../../assets/origamidLogo.png"
 import rocketseatImg from "../../assets/rocketseatLogo.png"
 import LogoImage from "../../assets/lucasLogo.png";
+import Logo from "../../assets/logo.svg";
 
 export function Header(){
     const html = window.document.activeElement;
@@ -61,7 +62,7 @@ export function Header(){
     return  (
         <Container>
             <Link>
-                <Logo/>
+                <img src={Logo} alt="" />
             </Link>
             <Navigation>
                 <input 
