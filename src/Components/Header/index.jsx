@@ -61,7 +61,7 @@ export function Header(){
 
     return  (
         <Container>
-            <Link>
+            <Link to="/">
                 <img src={Logo} alt="" />
             </Link>
             <Navigation>
@@ -73,7 +73,7 @@ export function Header(){
                 <label  htmlFor="navMainMenuTrigger"><span>Menu</span></label>
                 <ul className="navigationBar" role="navigation">
                     <List address='/' title='Inicio' icon={FiHome}/>
-                    <List address='/' title='Sobre' icon={FiUserCheck}/>
+                    <List address='/about' title='Sobre' icon={FiUserCheck}/>
                     <List address='/' title='Contato' icon={FiPhone}/>
                     <MenuLabel>
                         <input 

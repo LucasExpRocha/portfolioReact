@@ -47,6 +47,7 @@ export const Navigation = styled.nav`
 
     > ul {
         display: none;
+        z-index: 500;
 
         a {
             font-weight: 500;

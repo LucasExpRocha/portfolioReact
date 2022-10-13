@@ -31,4 +31,18 @@ export default createGlobalStyle`
     button:hover, a:hover {
         filter: brightness(.9);
     }
+
+    @media (min-width: 1024px) {
+        main {
+            h1 {
+            font-size: 2.5rem;
+            }
+            h3 {
+                font-size: 1.5rem;
+            }
+            p, label {
+                font-size: 1.25rem;
+            }
+        }
+    }
 `;
