@@ -25,5 +25,9 @@ Este projeto estou fazendo com o conceito Mobile First, que significa
 0.0.3 - Colocando click out side no menu. 
 0.0.4 - Mudanças e melhoria no header como (box shadows, bordas, ux nos possiveis botões), ciração do componente CardHeaderProjects (componente será utilizado como navegação em "Projetos" no header para telas largas) 
 0.0.5 - Icones no header, estilização do header e inicio da page home.
--->
 0.0.6 - Home pronto, about finalizando
+0.0.7 - About finalizado
+0.0.8 - Contato finalizado
+-->
+
+0.0.9 - Iniciando pagina de projetos

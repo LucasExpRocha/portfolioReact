@@ -21,7 +21,6 @@ export function Header(){
         if(e.checked && e.id == 'navMainMenuTrigger'){
             let listMenuMobile = document.querySelector('.navigationBar')
 
-            console.log('entrou')
             setTimeout(() => {
                 html.addEventListener("click", handlOutsideClick)
                 listMenuMobile.setAttribute(outside, '')
@@ -41,7 +40,6 @@ export function Header(){
         if(e.checked && e.id == 'navMenuLabel'  && window.screen.availWidth > 1040){
             let listMenuDesktop = document.querySelector('.menu')
 
-            console.log('entrou desktop')
             setTimeout(() => {
                 html.addEventListener("click", handlOutsideClick)
                 listMenuDesktop.setAttribute(outside, '')
@@ -74,7 +72,7 @@ export function Header(){
                 <ul className="navigationBar" role="navigation">
                     <List address='/' title='Inicio' icon={FiHome}/>
                     <List address='/about' title='Sobre' icon={FiUserCheck}/>
-                    <List address='/' title='Contato' icon={FiPhone}/>
+                    <List address='/contact' title='Contato' icon={FiPhone}/>
                     <MenuLabel>
                         <input 
                             onChange={e => clickOutSide(e.target)} 
@@ -83,7 +81,7 @@ export function Header(){
                         />
                         <label  htmlFor="navMenuLabel"><span>Projetos</span><RiArrowDownSLine size={20}/></label>
                         <ul className="menuMobile">
-                            <List address='/' title='Curso Explorer'/>
+                            <List address='/projects' title='Curso Explorer'/>
                             <List address='/' title='Curso Origamid'/>
                             <List address='/' title='Projetos Pessoais'/>
                         </ul>

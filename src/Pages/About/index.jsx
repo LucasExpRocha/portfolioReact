@@ -1,5 +1,5 @@
 import { FiDownload } from "react-icons/fi"
-import { BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs"
+
 import { Container, Images, AboutMe, Objectives, Abilities, Qualification, Footer } from "./styles"
 
 import { Header } from "../../Components/Header"
@@ -7,10 +7,12 @@ import { TimeExp } from "../../Components/TimeExperience"
 import { Figure } from "../../Components/Figure"
 import { GoalsObjectives } from "../../Components/GoalsObjectives"
 import { Education } from "../../Components/Education"
+import { IconsContact } from "../../Components/IconsContact"
 
 import astronaut from "../../assets/PageAbout/fotodetest.png"
 import pessoalPic from "../../assets/PageAbout/pessoalIcon.png"
 import profissionalPic from "../../assets/PageAbout/profissionalFoto.png"
+import curriculo from "../../assets/Curriculo/CurriculoLucasRocha.pdf"
 
 import { useState } from "react"
 
@@ -30,7 +32,7 @@ export function About(){
                             <TimeExp number="05" title="Month"/>
                             <TimeExp number="10" title="Projects"/>
                         </div>
-                        <a href="" ><FiDownload/>Download CV</a>
+                        <a href={curriculo} download="" ><FiDownload/>Download CV</a>
                     </div>
                 </AboutMe>
                 <Objectives>
@@ -84,11 +86,7 @@ export function About(){
                     </div>
                 </Qualification>
                 <Footer>
-                    <div>
-                        <a href="https://github.com/LucasExpRocha"><BsGithub size={40}/></a>
-                        <a href="https://www.linkedin.com/in/lucas-exposito-rocha-777123187/"><BsLinkedin size={40}/></a>
-                        <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5524998641277"><BsWhatsapp size={40}/></a>
-                    </div>
+                    <IconsContact/>
                     <p>Feito com ❤️ por Lucas Exposito Rocha!</p>
                 </Footer>
             </main>

@@ -10,7 +10,7 @@ export const Container = styled.div`
         "header"
         "container";
 
-        header {
+    header {
         grid-area: header;
     }
 
@@ -150,15 +150,6 @@ export const Footer = styled.footer`
 
     > div {
         grid-area: icons;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-
-        svg {
-            fill: #e1e1e1;
-        }
     }
     
     > p {
