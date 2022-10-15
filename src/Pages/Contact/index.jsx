@@ -1,5 +1,9 @@
 import { useForm } from 'react-hook-form';
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
+
 import emailjs from "@emailjs/browser"
+
 import { FaUserEdit, FaMarker } from 'react-icons/fa';
 import { RiMailSendFill } from 'react-icons/ri'
 
@@ -10,20 +14,28 @@ import { IconsContact } from "../../Components/IconsContact"
 
 import contactPic from "../../assets/PageContact/toContact.png"
 
+const SignupSchema = yup.object().shape({
+    firstName: yup.string().required(),
+    Email: yup.string().required().email(),
+    Theme: yup.string().required(),
+    Message: yup.string().required()
+  });
+
 export function Contact(){
-    const { register, handleSubmit, reset, formState: { isSubmitSuccessful } } = useForm();
+    const { register, handleSubmit, reset, formState: { errors } } = useForm({ resolver: yupResolver(SignupSchema) });
+
     const onSubmit = (data) => {
         const templeteParams = {
-            from_name: data.FirstName,
+            from_name: data.firstName,
             email: data.Email,
             theme: data.Theme,
             message: data.Message
         }   
-         emailjs.send("service_lrk1vje", "template_z30lxqu", templeteParams, "JNFwHPGqn7nhKgNCi")
+        emailjs.send("service_lrk1vje", "template_z30lxqu", templeteParams, "JNFwHPGqn7nhKgNCi")
             .then((response) => {
                 alert("Email enviado", response.status, response.text)
                 reset({
-                    FirstName: '',
+                    firstName: '',
                     Email: '',
                     Theme: '',
                     Message: ''
@@ -31,7 +43,7 @@ export function Contact(){
             }, (error) => {
                 alert(`Falha ao enviar, erro: ${error}`)
             })
-    };
+        };
     
     
 
@@ -51,19 +63,23 @@ export function Contact(){
                 </section>
                 <section>
                     <form onSubmit={handleSubmit(onSubmit)}>
+                        {errors.firstName && <p>{errors.firstName.message}</p>}
                         <div>
                             <FaUserEdit/>
-                            <input type="text" placeholder="Nome" {...register("FirstName", {required: true, maxLength: 80})} />
+                            <input type="text" placeholder="Nome" {...register("firstName")} />
                         </div>
+                        {errors.Email && <p>{errors.Email.message}</p>}
                         <div>
                             <RiMailSendFill/>
-                            <input type="text" placeholder="Email" {...register("Email", {required: true, pattern: /^\S+@\S+$/i})} />
+                            <input type="text" placeholder="Email" {...register("Email")}/>
                         </div>
+                        {errors.Theme && <p>{errors.Theme.message}</p>}
                         <div>
                             <FaMarker/>
                             <input type="text" placeholder="Assunto" {...register("Theme", {})} />
                         </div>
-                        <textarea placeholder="Digite aqui sua mensagem..." {...register("Message", {required: true})} />
+                        {errors.Message && <p>{errors.Message.message}</p>}
+                        <textarea placeholder="Digite aqui sua mensagem..." {...register("Message")} />
                         <button>Enviar</button>
                     </form>
                 </section>

@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom/client'
 import { ThemeProvider } from 'styled-components';
 import theme from './Styles/theme';
 import GlobalStyles from './Styles/global';
+import "swiper/css/bundle";
+
 
 import { Routes } from './Routes';
 

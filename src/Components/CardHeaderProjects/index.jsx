@@ -1,8 +1,8 @@
 import { Container } from './styles'
 
-export function CardHeaderProjects({bgIMG, title, description}){
+export function CardHeaderProjects({bgIMG, title, description, address}){
     return(
-        <Container>
+        <Container to={address}>
             <img src={bgIMG} alt="altImg" />
             <section>
                 <h1>{title}</h1>

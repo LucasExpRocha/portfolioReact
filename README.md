@@ -28,6 +28,7 @@ Este projeto estou fazendo com o conceito Mobile First, que significa
 0.0.6 - Home pronto, about finalizando
 0.0.7 - About finalizado
 0.0.8 - Contato finalizado
--->
-
 0.0.9 - Iniciando pagina de projetos
+0.1.0 - Pagina de projetos finalizada
+0.1.1 - Pagina de detales dos projetos finalizada
+-->

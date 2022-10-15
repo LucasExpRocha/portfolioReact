@@ -81,9 +81,9 @@ export function Header(){
                         />
                         <label  htmlFor="navMenuLabel"><span>Projetos</span><RiArrowDownSLine size={20}/></label>
                         <ul className="menuMobile">
-                            <List address='/projects' title='Curso Explorer'/>
-                            <List address='/' title='Curso Origamid'/>
-                            <List address='/' title='Projetos Pessoais'/>
+                            <List address='/projects/rocketseat' title='Curso Rocketseat'/>
+                            <List address='/projects/origamid' title='Curso Origamid'/>
+                            <List address='/projects/private' title='Projetos Pessoais'/>
                         </ul>
                         <ul className="menu">
                             <div>
@@ -91,16 +91,19 @@ export function Header(){
                                     bgIMG={origamidImg} 
                                     title="Origamid" 
                                     description="Todos os projetos feitos aqui foram com conhecimentos adiquiridos no curso da origamid."  
+                                    address="/projects/origamid"                                
                                 />
                                 <CardHeaderProjects 
                                     bgIMG={LogoImage} 
                                     title="Projetos Pessoais" 
                                     description="Os projetos pertencetes nesta parte são de autenticidade minha."
+                                    address="/projects/private"
                                 />
                                 <CardHeaderProjects 
                                     bgIMG={rocketseatImg} 
                                     title="Rocketseat" 
                                     description="Aqui existem projetos desenvolvidos durante o curso e projetos desenvolvido como desafios."
+                                    address="/projects/rocketseat"
                                 />
                             </div>
                         </ul>

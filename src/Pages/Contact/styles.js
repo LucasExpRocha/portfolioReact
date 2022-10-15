@@ -39,6 +39,18 @@ export const Container = styled.div`
             form {
                 padding: 0 2rem;
 
+                p {
+                    font-size: 1rem;
+                    font-weight: 500;
+                    color: red;
+                    margin-bottom: 0;
+                }
+
+                p::before {
+                    display: inline;
+                    content: "⚠ ";
+                }
+
                 > div {
                     width: 100%;
                     display: flex;
@@ -47,10 +59,13 @@ export const Container = styled.div`
                     background-color: #29293d;
                     color: #e1e1e1;
 
-                    margin-bottom: .5rem;
+                    margin-bottom: 1rem;
                     border-radius: .675rem;
 
                     > input {
+                        display: block;
+                        box-sizing: border-box;
+
                         height: 3.75rem;
                         width: 100%;
 
