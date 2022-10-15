@@ -1,5 +1,5 @@
 export const AllProjects = [
-    {
+/* Explorer */    {
         courseName: "explorer",
         courseId: "1",
         projects: [
@@ -279,15 +279,112 @@ export const AllProjects = [
                     }
                 ]
             },
+            {
+                id: 12,
+                name: "Api Rocketnotes",
+                description: 'Este projeto foi feito para ser utilizado como back-end do projeto rocketnotes, uma parte dele foi utilizado sql "puro" e query builder.',
+                image: "https://cdn-icons-png.flaticon.com/512/344/344389.png?w=740&t=st=1665859313~exp=1665859913~hmac=6b6f4eac9fa7cea183ff3fced5608c7a2ee2e75c40f3ac4526ea52e5b9e684d1",
+                tools: [
+                    {
+                        nameTool: "Express.js"
+                    },
+                    {
+                        nameTool: "SQLite3"
+                    },
+                    {
+                        nameTool: "Knex.js"
+                    }
+                ],
+                links: [
+                    {
+                        nameLink: "GitHub",
+                        href: ".../projeto1",
+                    }
+                ]
+            },
+            {
+                id: 13,
+                name: "Api Rocketmovies",
+                description: "Este projeto foi feito para ser utilizado como back-end do projeto rocketmovies, fiz totalmente em query builder para maior versatilidade de bancos de dados.",
+                image: "https://img.freepik.com/vetores-gratis/ilustracao-da-api-de-gradiente_23-2149368725.jpg?w=826&t=st=1665859379~exp=1665859979~hmac=450f70c4fe99085bd35dc741c346f64676d3e11af00b78a5d888ce0e16a0889d",
+                tools: [
+                    {
+                        nameTool: "Express.js"
+                    },
+                    {
+                        nameTool: "Knex.js"
+                    }
+                ],
+                links: [
+                    {
+                        nameLink: "GitHub",
+                        href: ".../projeto1",
+                    }
+                ]
+            },
+            {
+                id: 14,
+                name: "Rocketnotes",
+                description: "Uma aplicação para gerenciar anotações, links, pensada para adicionar para organizar essas anotações, com autenticação de login",
+                image: "https://user-images.githubusercontent.com/107315686/196003232-838ef28b-77fc-482d-92f7-4d4c5709e2dc.png",
+                tools: [
+                    {
+                        nameTool: "React"
+                    },
+                    {
+                        nameTool: "Vite"
+                    },
+                    {
+                        nameTool: "Styled Components"
+                    }
+                ],
+                links: [
+                    {
+                        nameLink: "GitHub",
+                        href: ".../projeto1",
+                    },
+                    {
+                        nameLink: "Page",
+                        href: ".../projeto"
+                    }
+                ]
+            },
+            {
+                id: 14,
+                name: "Rocketmovies",
+                description: "Este projeto tem como intuito salvar uma nota daquele seu filme favorito, podendo dar notas, adicionar, remover, alterar.",
+                image: "https://user-images.githubusercontent.com/107315686/196003533-585f3f27-34b3-4238-99fa-5e774534fa97.png",
+                tools: [
+                    {
+                        nameTool: "React"
+                    },
+                    {
+                        nameTool: "Vite"
+                    },
+                    {
+                        nameTool: "Styled Components"
+                    }
+                ],
+                links: [
+                    {
+                        nameLink: "GitHub",
+                        href: ".../projeto1",
+                    },
+                    {
+                        nameLink: "Page",
+                        href: ".../projeto"
+                    }
+                ]
+            },
         ]
     },
-    {
+/* Discover */    {
         courseName: "discover",
         courseId: "2",
         projects: [
             {
                 id: 1,
-                name: "Portfolio",
+                name: "Portfolio Discover",
                 description: "Projeto um feito...",
                 image: "https://swiperjs.com/demos/images/nature-1.jpg",
                 tools: [
@@ -311,7 +408,7 @@ export const AllProjects = [
             },
             {
                 id: 2,
-                name: "Projeto 2",
+                name: "Link Tree",
                 description: "Projeto um feito...",
                 image: "https://swiperjs.com/demos/images/nature-2.jpg",
                 tools: [
@@ -335,21 +432,24 @@ export const AllProjects = [
             }
         ]
     },
-    {
+/* Origamid */    {
         courseName: "origamid",
         courseId: "3",
         projects: [
             {
                 id: 1,
-                name: "Projeto 1",
-                description: "Projeto um feito...",
-                image: "https://swiperjs.com/demos/images/nature-1.jpg",
+                name: "Animais Fantásticos",
+                description: "Este projeto serve para demonstrar todo o ensinamento passado durante o curso de javascript da origamid, criado um site de animais com algumas animações e efeitos bastante utilizados.",
+                image: "https://user-images.githubusercontent.com/107315686/196003890-47e5f313-1196-43a1-9056-1fec9f333b12.png",
                 tools: [
                     {
                         nameTool: "CSS"
                     },
                     {
                         nameTool: "HTML"
+                    },
+                    {
+                        nameTool: "JavaScript"
                     }
                 ],
                 links: [
@@ -365,21 +465,24 @@ export const AllProjects = [
             }
         ]
     },
-    {
+/* Private */    {
         courseName: "private",
         courseId: "4",
         projects: [
             {
                 id: 1,
-                name: "Projeto 1",
-                description: "Projeto um feito...",
-                image: "https://swiperjs.com/demos/images/nature-1.jpg",
+                name: "Portfolio",
+                description: "Este portfolio foi feito exclusivamente por mim `Lucas Exposito Rocha`, fiz com todo carinho e dedicação, caso queira dar uma olhadinha o link para o github está logo abaixo.",
+                image: "https://user-images.githubusercontent.com/107315686/196003644-5830bd81-3559-41c8-a3bd-1a5c9f0abfc1.png",
                 tools: [
                     {
-                        nameTool: "CSS"
+                        nameTool: "React"
                     },
                     {
-                        nameTool: "HTML"
+                        nameTool: "Styled Components"
+                    },
+                    {
+                        nameTool: "Vite"
                     }
                 ],
                 links: [

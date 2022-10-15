@@ -82,8 +82,8 @@ export function Header(){
                         <label  htmlFor="navMenuLabel"><span>Projetos</span><RiArrowDownSLine size={20}/></label>
                         <ul className="menuMobile">
                             <List address='/projects/rocketseat' title='Curso Rocketseat'/>
-                            <List address='/projects/origamid' title='Curso Origamid'/>
-                            <List address='/projects/private' title='Projetos Pessoais'/>
+                            <List address='/projects/origamid/1' title='Curso Origamid'/>
+                            <List address='/projects/private/1' title='Projetos Pessoais'/>
                         </ul>
                         <ul className="menu">
                             <div>
@@ -91,13 +91,13 @@ export function Header(){
                                     bgIMG={origamidImg} 
                                     title="Origamid" 
                                     description="Todos os projetos feitos aqui foram com conhecimentos adiquiridos no curso da origamid."  
-                                    address="/projects/origamid"                                
+                                    address="/projects/origamid/1"                                
                                 />
                                 <CardHeaderProjects 
                                     bgIMG={LogoImage} 
                                     title="Projetos Pessoais" 
                                     description="Os projetos pertencetes nesta parte são de autenticidade minha."
-                                    address="/projects/private"
+                                    address="/projects/private/1"
                                 />
                                 <CardHeaderProjects 
                                     bgIMG={rocketseatImg} 
