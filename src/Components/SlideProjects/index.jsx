@@ -1,6 +1,7 @@
 import { Carousel } from "./styles"
 
 import { Link } from "react-router-dom";
+import { GiClick } from "react-icons/gi"
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -38,9 +39,12 @@ export function SlideProjects({req}){
                                 {
                                     course.projects.map(project => {
                                         return(
-                                            <SwiperSlide key={project.id}>
+                                            <SwiperSlide key={project.name}>
                                                 <Link to={`/projects/${course.courseName}/${project.id}`}>
                                                     <img src={project.image} />
+                                                    <div>
+                                                        <p><GiClick/> <span>Clique aqui!</span></p>
+                                                    </div>
                                                 </Link>
                                             </SwiperSlide>
                                         )

@@ -20,6 +20,47 @@ export const Carousel = styled.section`
     height: 100%;
   }
 
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+
+    position: relative;
+    margin: 0 auto;
+
+  }
+
+  .swiper-slide div {
+    display: none;
+  }
+
+  .swiper-slide-active div {
+    display: block;
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    p {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+
+      padding: .5rem 1rem;
+      border-radius: .5rem;
+
+      color: white;
+      background-color: rgba(0,0,0,.5);
+    }
+  }
+
   @media (max-width: 375px) {
     .swiper {
     width: 100%;

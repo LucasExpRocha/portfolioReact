@@ -6,7 +6,7 @@ export const AllProjects = [
             {
                 id: 1,
                 name: "Desafio de acessibilidade",
-                description: "Este o primeiro projeto feito no curso explorer, o projeto em questão era para treinarmos a acessibilidade do código utilizando tags semanticas.",
+                description: "Este o primeiro projeto feito no curso explorer, o projeto em questão era para treinarmos a acessibilidade do código utilizando tags semânticas.",
                 image: "https://user-images.githubusercontent.com/107315686/195963128-5bddd91e-e185-49ce-92f6-e2011290ef3b.png",
                 tools: [
                     {
@@ -19,18 +19,18 @@ export const AllProjects = [
                 links: [
                     {
                         nameLink: "Pagina",
-                        href: ".../html"
+                        href: "https://lucasexprocha.github.io/Explorer/Stage02/Desafio_acessibilidade/"
                     },
                     {
                         nameLink: "GitHub",
-                        href: ".../projeto1",
+                        href: "https://github.com/LucasExpRocha/Explorer/tree/main/Stage02/Desafio_acessibilidade",
                     }
                 ]
             },
             {
                 id: 2,
                 name: "Recriando Layout",
-                description: "Este projeto foi com o objetivo de utilizar todo o conteudo passado durante o stage 02 do curso, recriar um layout a partir de um projeto disponibilizado no figma.",
+                description: "Este projeto foi com o objetivo de utilizar todo o conteúdo passado durante o stage 02 do curso, recriar um layout a partir de um projeto disponibilizado no figma.",
                 image: "https://user-images.githubusercontent.com/107315686/195963358-a2b76f17-13cc-44ca-97c6-30da85bc4e6c.png",
                 tools: [
                     {
@@ -43,18 +43,18 @@ export const AllProjects = [
                 links: [
                     {
                         nameLink: "Pagina",
-                        href: ".../html"
+                        href: "https://lucasexprocha.github.io/Explorer/Stage02/DesafioStage-01/"
                     },
                     {
                         nameLink: "GitHub",
-                        href: ".../projeto1",
+                        href: "https://github.com/LucasExpRocha/Explorer/tree/main/Stage02/DesafioStage-01",
                     }
                 ]
             },
             {
                 id: 3,
                 name: "Formulario 01",
-                description: "Aqui o desafio foi criar um formulario utilizando toda informação passada nas aulas anteriores, foi disponibilizado dois projetos no figma e ficava a escolha do aluno qual fazer, este é o primeiro formulario.",
+                description: "Aqui o desafio foi criar um formulário utilizando toda a informação passada nas aulas anteriores, foi disponibilizado dois projetos no figma e ficava a escolha do aluno qual fazer, este é o primeiro formulário.",
                 image: "https://user-images.githubusercontent.com/107315686/195963415-e6823fc1-8eba-42cb-9e44-2c20fda51541.png",
                 tools: [
                     {
@@ -67,18 +67,18 @@ export const AllProjects = [
                 links: [
                     {
                         nameLink: "Pagina",
-                        href: ".../html"
+                        href: "https://lucasexprocha.github.io/Explorer/Stage03/Formulario-01/"
                     },
                     {
                         nameLink: "GitHub",
-                        href: ".../projeto1",
+                        href: "https://github.com/LucasExpRocha/Explorer/tree/main/Stage03/Formulario-01",
                     }
                 ]
             },
             {
                 id: 4,
                 name: "Formulario 02",
-                description: "Aqui o desafio foi criar um formulario utilizando toda informação passada nas aulas anteriores, foi disponibilizado dois projetos no figma e ficava a escolha do aluno qual fazer, este é o segundo formulario.",
+                description: "Aqui o desafio foi criar um formulário utilizando toda informação passada nas aulas anteriores, foi disponibilizado dois projetos no figma e ficava a escolha do aluno qual fazer, este é o segundo formulário.",
                 image: "https://user-images.githubusercontent.com/107315686/195963498-e82d593e-1ad2-4548-8e73-d339fa1a3668.png",
                 tools: [
                     {
@@ -91,18 +91,18 @@ export const AllProjects = [
                 links: [
                     {
                         nameLink: "Pagina",
-                        href: ".../html"
+                        href: "https://lucasexprocha.github.io/Explorer/Stage03/Formulario-02/"
                     },
                     {
                         nameLink: "GitHub",
-                        href: ".../projeto1",
+                        href: "https://github.com/LucasExpRocha/Explorer/tree/main/Stage03/Formulario-02",
                     }
                 ]
             },
             {
                 id: 5,
                 name: "Space Cream",
-                description: "A ideia deste projeto foi recriar o layout de um cardapio, aqui foi utilizado o conceito 'Mobile First', ou seja, o projeto foi criado primeiro para dispositivos móveis e depois adaptado para plataformas desktop.",
+                description: "A ideia deste projeto foi recriar o layout de um cardápio, aqui foi utilizado o conceito 'Mobile First', ou seja, o projeto foi criado primeiro para dispositivos móveis e depois adaptado para plataformas desktop.",
                 image: "https://user-images.githubusercontent.com/107315686/195963574-0ebdcb11-2dc6-47da-9ba3-dc279364d66b.png",
                 tools: [
                     {
@@ -115,18 +115,18 @@ export const AllProjects = [
                 links: [
                     {
                         nameLink: "Pagina",
-                        href: ".../html"
+                        href: "https://lucasexprocha.github.io/Explorer/Stage03/Mobile-First/"
                     },
                     {
                         nameLink: "GitHub",
-                        href: ".../projeto1",
+                        href: "https://github.com/LucasExpRocha/Explorer/tree/main/Stage03/Mobile-First",
                     }
                 ]
             },
             {
                 id: 6,
                 name: "Exercicio 01",
-                description: "Aqui foi feito um exercicio para introdução ao Javascript, a ideia é capturar valores informados do usuario e fazer algumas contas matematicas, após as contas informar os resultados para o usuario.",
+                description: "Aqui foi feito um exercício para introdução ao Javascript, a ideia é capturar valores informados do usuário e fazer algumas contas matemáticas, após as contas informar os resultados para o usuário.",
                 image: "https://user-images.githubusercontent.com/107315686/195963657-2f0e8d24-cd1f-4372-b55d-fe9d4a5c499a.png",
                 tools: [
                     {
@@ -139,18 +139,18 @@ export const AllProjects = [
                 links: [
                     {
                         nameLink: "Pagina",
-                        href: ".../html"
+                        href: "https://lucasexprocha.github.io/Explorer/Stage04/Exercicio01/"
                     },
                     {
                         nameLink: "GitHub",
-                        href: ".../projeto1",
+                        href: "https://github.com/LucasExpRocha/Explorer/tree/main/Stage04/Exercicio01",
                     }
                 ]
             },
             {
                 id: 7,
                 name: "Exercicio 02",
-                description: "A ideia deste exercicio é ir mais além no Javascript, a ideia inicial era buscar um valor de uma lista de alunos, fui um pouco além, fiz um pequeno menu e pedi para o usuario informar os dados do aluno. ",
+                description: "A ideia deste exercício é ir mais além no Javascript, a ideia inicial era buscar um valor de uma lista de alunos, fui um pouco além, fiz um pequeno menu e pedi para o usuário informar os dados do aluno. ",
                 image: "https://user-images.githubusercontent.com/107315686/195963696-7f45f745-bc33-4cb6-bf95-4b54fdde3af9.png",
                 tools: [
                     {
@@ -163,11 +163,11 @@ export const AllProjects = [
                 links: [
                     {
                         nameLink: "Pagina",
-                        href: ".../html"
+                        href: "https://lucasexprocha.github.io/Explorer/Stage04/Exercicio02/"
                     },
                     {
                         nameLink: "GitHub",
-                        href: ".../projeto1",
+                        href: "https://github.com/LucasExpRocha/Explorer/tree/main/Stage04/Exercicio02",
                     }
                 ]
             },
@@ -190,18 +190,18 @@ export const AllProjects = [
                 links: [
                     {
                         nameLink: "Pagina",
-                        href: ".../html"
+                        href: "https://lucasexprocha.github.io/Explorer/Stage05/Desafio/"
                     },
                     {
                         nameLink: "GitHub",
-                        href: ".../projeto1",
+                        href: "https://github.com/LucasExpRocha/Explorer/tree/main/Stage05/Desafio",
                     }
                 ]
             },
             {
                 id: 9,
                 name: "Calculadora de IMC",
-                description: "Este projeto é uma calculadora de indice de massa corporal, o desafio em si foi feito conforme o pedido, porém por motivos pessoais preciso fazer algumas mudanças para deixar o seu uso de maneira confortavel para o usuario. ",
+                description: "Este projeto é uma calculadora de índice de massa corporal, o desafio em si, foi feito conforme o pedido, porém por motivos pessoais, preciso fazer algumas mudanças para deixar o seu uso de maneira confortável para o usuário. ",
                 image: "https://user-images.githubusercontent.com/107315686/195963747-da31897d-af0a-444c-a51e-6a13d3421aac.png",
                 tools: [
                     {
@@ -217,18 +217,18 @@ export const AllProjects = [
                 links: [
                     {
                         nameLink: "Pagina",
-                        href: ".../html"
+                        href: "https://lucasexprocha.github.io/Explorer/Stage05/Desafio-IMC/"
                     },
                     {
                         nameLink: "GitHub",
-                        href: ".../projeto1",
+                        href: "https://github.com/LucasExpRocha/Explorer/tree/main/Stage05/Desafio-IMC",
                     }
                 ]
             },
             {
                 id: 10,
                 name: "Projeto SPA",
-                description: "A ideia deste projeto é fazer uma SPA (Single Page Aplication) um aplicativo de página única é uma aplicação web ou site que consiste de uma única página web com o objetivo de fornecer uma experiência do usuário similar à de um aplicativo desktop",
+                description: "A ideia deste projeto é fazer uma SPA (Single Page Aplication) um aplicativo de página única é uma aplicação web ou site que consiste em uma única página web com o objetivo de fornecer uma experiência do usuário similar à de um aplicativo desktop.",
                 image: "https://user-images.githubusercontent.com/107315686/195963822-77f41324-68ac-4cee-bf39-1e5be9ec5967.jpg",
                 tools: [
                     {
@@ -243,19 +243,15 @@ export const AllProjects = [
                 ],
                 links: [
                     {
-                        nameLink: "Pagina",
-                        href: ".../html"
-                    },
-                    {
                         nameLink: "GitHub",
-                        href: ".../projeto1",
+                        href: "https://github.com/LucasExpRocha/Explorer/tree/main/Stage06/Desafio-SPA",
                     }
                 ]
             },
             {
                 id: 11,
                 name: "GitFav",
-                description: "Este projeto tem como intuito uma página de favoritos, os favoritos que podem ser adicionados é referente a página do github, após adicionado o nome o programa faz uma busca pelo usuario no github e trás para sua lista, o mesmo fica salvo até ser deletado.",
+                description: "Este projeto tem como intuito uma página de favoritos, os favoritos que podem ser adicionados é referente a página do github, após adicionado o nome o programa faz uma busca pelo usuário no github e traz para sua lista, o mesmo fica salvo até ser deletado.",
                 image: "https://user-images.githubusercontent.com/107315686/195963846-e6816f7e-e989-4313-a56f-ae07942d500a.jpg",
                 tools: [
                     {
@@ -271,11 +267,11 @@ export const AllProjects = [
                 links: [
                     {
                         nameLink: "Pagina",
-                        href: ".../html"
+                        href: "https://lucasexprocha.github.io/Explorer/Stage06/GitFav/"
                     },
                     {
                         nameLink: "GitHub",
-                        href: ".../projeto1",
+                        href: "https://github.com/LucasExpRocha/Explorer/tree/main/Stage06/GitFav",
                     }
                 ]
             },
@@ -325,7 +321,7 @@ export const AllProjects = [
             {
                 id: 14,
                 name: "Rocketnotes",
-                description: "Uma aplicação para gerenciar anotações, links, pensada para adicionar para organizar essas anotações, com autenticação de login",
+                description: "Uma aplicação para gerenciar anotações, links, pensada para adicionar para organizar essas anotações, com autenticação de login.",
                 image: "https://user-images.githubusercontent.com/107315686/196003232-838ef28b-77fc-482d-92f7-4d4c5709e2dc.png",
                 tools: [
                     {
@@ -385,8 +381,8 @@ export const AllProjects = [
             {
                 id: 1,
                 name: "Portfolio Discover",
-                description: "Projeto um feito...",
-                image: "https://swiperjs.com/demos/images/nature-1.jpg",
+                description: "Este projeto foi feito baseado em um dos desafios propostos pelo curso discover da rocketseat, se baseia em um portfolio pré moldado.",
+                image: "https://user-images.githubusercontent.com/107315686/196039354-eb8a04aa-6c00-4d01-babb-5d8be6439aa8.png",
                 tools: [
                     {
                         nameTool: "CSS"
@@ -398,19 +394,19 @@ export const AllProjects = [
                 links: [
                     {
                         nameLink: "Pagina",
-                        href: ".../html"
+                        href: "https://lucasexprocha.github.io/DesafiosDiscover/desafio-portfolio-discover/"
                     },
                     {
                         nameLink: "GitHub",
-                        href: ".../projeto1",
+                        href: "https://github.com/LucasExpRocha/DesafiosDiscover/tree/main/desafio-portfolio-discover",
                     }
                 ]
             },
             {
                 id: 2,
                 name: "Link Tree",
-                description: "Projeto um feito...",
-                image: "https://swiperjs.com/demos/images/nature-2.jpg",
+                description: "Este projeto foi executado durante uma das maratonas explorer, também está disponível como um dos desafios do curso discover da rocketseat, feito para ser uma página de mídias sociais.",
+                image: "https://user-images.githubusercontent.com/107315686/196039311-669598da-bba9-4bab-9516-54f13e2fae0b.png",
                 tools: [
                     {
                         nameTool: "CSS"
@@ -422,11 +418,11 @@ export const AllProjects = [
                 links: [
                     {
                         nameLink: "Pagina",
-                        href: ".../html"
+                        href: "https://lucasexprocha.github.io/DesafiosDiscover/SocialTree/"
                     },
                     {
                         nameLink: "GitHub",
-                        href: ".../projeto1",
+                        href: "https://github.com/LucasExpRocha/DesafiosDiscover/tree/main/SocialTree",
                     }
                 ]
             }
@@ -439,7 +435,7 @@ export const AllProjects = [
             {
                 id: 1,
                 name: "Animais Fantásticos",
-                description: "Este projeto serve para demonstrar todo o ensinamento passado durante o curso de javascript da origamid, criado um site de animais com algumas animações e efeitos bastante utilizados.",
+                description: "Este projeto serve para demonstrar todo o ensinamento passado durante o curso de javascript da origamid, criado um site de animais com algumas animações e efeitos bastante utilizados. (Os números utilizados são fícticios, apenas para mostrar o efeito crescente)",
                 image: "https://user-images.githubusercontent.com/107315686/196003890-47e5f313-1196-43a1-9056-1fec9f333b12.png",
                 tools: [
                     {
@@ -454,12 +450,8 @@ export const AllProjects = [
                 ],
                 links: [
                     {
-                        nameLink: "Pagina",
-                        href: ".../html"
-                    },
-                    {
                         nameLink: "GitHub",
-                        href: ".../projeto1",
+                        href: "https://github.com/LucasExpRocha/Origamid/tree/main/Javascript/Stage05/MelhoriasNoProjeto",
                     }
                 ]
             }
@@ -487,12 +479,8 @@ export const AllProjects = [
                 ],
                 links: [
                     {
-                        nameLink: "Pagina",
-                        href: ".../html"
-                    },
-                    {
                         nameLink: "GitHub",
-                        href: ".../projeto1",
+                        href: "https://github.com/LucasExpRocha/portfolioReact",
                     }
                 ]
             }

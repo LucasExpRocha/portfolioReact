@@ -23,13 +23,13 @@ export function Aside(){
                 {
                     AllProjects.map(e => {
                         return (
-                            <div>
+                            <div key={e.courseId}>
                                 <h4>{e.courseName}</h4>
                                 <ul>
                                     {
                                         e.projects.map(project => {
                                             return (
-                                                <li>
+                                                <li key={project.name}>
                                                     <a href={`/projects/${e.courseName}/${project.id}`}>{project.name}</a>
                                                 </li>
                                             )
