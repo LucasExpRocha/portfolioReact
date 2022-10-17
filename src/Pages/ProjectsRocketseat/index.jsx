@@ -2,9 +2,11 @@ import { Container } from "./styles"
 
 import { Header } from "../../Components/Header";
 import { Aside } from "../../Components/Aside";
+import { Footer } from "../../Components/Footer"
+import { SlideProjects } from "../../Components/SlideProjects";
+
 import { AllProjects } from "../../Projects";
 
-import { SlideProjects } from "../../Components/SlideProjects";
 
 export function ProjectsRocketseat(){
     const rocketseat = ['explorer', 'discover']
@@ -19,6 +21,7 @@ export function ProjectsRocketseat(){
                 <Aside/>
                 <h1>Rocketseat</h1>
                 <SlideProjects req={projectsFilter} />
+                <Footer/>
             </main>
         </Container>
     )

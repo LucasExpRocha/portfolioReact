@@ -11,6 +11,7 @@ import { Container, Images } from "./styles"
 
 import { Header } from "../../Components/Header"
 import { IconsContact } from "../../Components/IconsContact"
+import { Footer } from "../../Components/Footer"
 
 import contactPic from "../../assets/PageContact/toContact.png"
 
@@ -83,6 +84,7 @@ export function Contact(){
                         <button>Enviar</button>
                     </form>
                 </section>
+                <Footer/>
             </main>
         </Container>
     )

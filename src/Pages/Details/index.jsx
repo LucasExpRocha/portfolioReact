@@ -8,6 +8,7 @@ import { useParams } from "react-router-dom";
 import { Container, Contant } from "./styles";
 import { Marker } from "../../Components/Marker";
 import { ProjectLink } from "../../Components/ProjectLink";
+import { Footer } from "../../Components/Footer";
 
 export function Details(){
     const { courseName, id } =  useParams()
@@ -50,6 +51,7 @@ export function Details(){
                         </div>
                     </Section>
                 </Contant>
+                <Footer/>
             </main>
         </Container>
     )

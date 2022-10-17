@@ -17,7 +17,6 @@ export const Container = styled.div`
     > main {
         grid-area: container;
         overflow-y: auto;
-        padding-bottom: 3rem;
     }
 `;
 
