@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Carousel = styled.section`
+  padding: 2rem 0;
+
    .swiper {
     width: 90%;
     padding-top: 1rem;

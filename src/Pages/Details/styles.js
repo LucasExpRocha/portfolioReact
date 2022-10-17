@@ -24,7 +24,7 @@ export const Contant = styled.div`
     max-width: 50rem;
     margin: 0 auto;
 
-    padding: 3rem 2rem 0 4rem;
+    padding: 3rem 2rem 2rem 4rem;
 
     > img {
         width: 100%;
