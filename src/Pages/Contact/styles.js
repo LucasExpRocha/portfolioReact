@@ -30,9 +30,11 @@ export const Container = styled.div`
             padding: 2rem 2rem 2rem;
             
             p {
-                margin-bottom: 2rem;
+                overflow-wrap: break-word;
                 word-wrap: break-word;
-                word-break: break-all;
+                -webkit-hyphens: auto;
+                -ms-hyphens: auto;
+                hyphens: auto;
                 text-align: justify;
             }
 
@@ -125,12 +127,8 @@ export const Container = styled.div`
                     
                     p {
                         padding: 1rem;
-                        overflow-wrap: break-word;
-                        word-wrap: break-word;
-                        -webkit-hyphens: auto;
-                        -ms-hyphens: auto;
-                        hyphens: auto;
-                        text-align: justify;
+                        word-break: normal;
+                        text-align: center;
                     }
                 }
                 img{
