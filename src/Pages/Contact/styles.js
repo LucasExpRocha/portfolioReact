@@ -125,8 +125,12 @@ export const Container = styled.div`
                     
                     p {
                         padding: 1rem;
-                        word-break: normal;
-                        text-align: center;
+                        overflow-wrap: break-word;
+                        word-wrap: break-word;
+                        -webkit-hyphens: auto;
+                        -ms-hyphens: auto;
+                        hyphens: auto;
+                        text-align: justify;
                     }
                 }
                 img{

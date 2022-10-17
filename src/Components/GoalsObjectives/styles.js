@@ -19,8 +19,11 @@ export const Container = styled.div`
 
     div {
         > p {
+            overflow-wrap: break-word;
             word-wrap: break-word;
-            word-break: break-all;
+            -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
             text-align: justify;
         }
 

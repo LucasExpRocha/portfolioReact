@@ -12,8 +12,11 @@ export const Container = styled.div`
     border-radius: .5rem;
 
     > p {
+        overflow-wrap: break-word;
         word-wrap: break-word;
-        word-break: break-all;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
         text-align: justify;
     }
 `;
