@@ -140,10 +140,11 @@ export const Container = styled.div`
         main {
             display: grid;
             grid-template-columns: 2fr 1fr;
-            grid-template-rows: 6rem auto;
+            grid-template-rows: 6rem auto auto;
             grid-template-areas: 
             "title title"
-            "midia form";
+            "midia form"
+            "footer footer";
 
             > h3 {
                 grid-area: title;
@@ -156,6 +157,10 @@ export const Container = styled.div`
                 grid-area: 2/2;
 
                 margin: auto 0;
+            }
+
+            footer {
+                grid-area: footer;
             }
         }
     }
