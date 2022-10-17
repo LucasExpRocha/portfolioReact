@@ -15,6 +15,7 @@ import Logo from "../../assets/logo.svg";
 export function Header(){
     const html = window.document.activeElement;
     const outside = 'data-outside';
+    const events = ['touchstart', 'click'];
 
     function clickOutSide(e){
         
@@ -22,7 +23,7 @@ export function Header(){
             let listMenuMobile = document.querySelector('.navigationBar')
 
             setTimeout(() => {
-                html.addEventListener("click", handlOutsideClick)
+                events.forEach(e => html.addEventListener(e, handlOutsideClick))
                 listMenuMobile.setAttribute(outside, '')
             },0 )
 
@@ -31,7 +32,8 @@ export function Header(){
                     setTimeout(() => {
                         document.querySelector('#navMainMenuTrigger').checked = false;
                         listMenuMobile.removeAttribute(outside)
-                        html.removeEventListener("click", handlOutsideClick)
+                        events.forEach(e => html.removeEventListener(e, handlOutsideClick))
+
                     },0)
                 }
             }
@@ -41,7 +43,7 @@ export function Header(){
             let listMenuDesktop = document.querySelector('.menu')
 
             setTimeout(() => {
-                html.addEventListener("click", handlOutsideClick)
+                events.forEach(e => html.addEventListener(e, handlOutsideClick))
                 listMenuDesktop.setAttribute(outside, '')
             },0 )
 
@@ -50,7 +52,7 @@ export function Header(){
                     setTimeout(() => {
                         document.querySelector('#navMenuLabel').checked = false;
                         listMenuDesktop.removeAttribute(outside)
-                        html.removeEventListener("click", handlOutsideClick)
+                        events.forEach(e => html.removeEventListener(e, handlOutsideClick))
                     },0)
                 }
             }
