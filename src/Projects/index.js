@@ -243,6 +243,10 @@ export const AllProjects = [
                 ],
                 links: [
                     {
+                        nameLink: "Pagina",
+                        href: "https://spapage.vercel.app/"
+                    },
+                    {
                         nameLink: "GitHub",
                         href: "https://github.com/LucasExpRocha/Explorer/tree/main/Stage06/Desafio-SPA",
                     }
@@ -294,7 +298,7 @@ export const AllProjects = [
                 links: [
                     {
                         nameLink: "GitHub",
-                        href: ".../projeto1",
+                        href: "https://github.com/LucasExpRocha/Explorer/tree/main/Stage08/Api",
                     }
                 ]
             },
@@ -314,7 +318,7 @@ export const AllProjects = [
                 links: [
                     {
                         nameLink: "GitHub",
-                        href: ".../projeto1",
+                        href: "https://github.com/LucasExpRocha/Explorer/tree/main/Stage08/DesafioNode",
                     }
                 ]
             },
@@ -337,11 +341,7 @@ export const AllProjects = [
                 links: [
                     {
                         nameLink: "GitHub",
-                        href: ".../projeto1",
-                    },
-                    {
-                        nameLink: "Page",
-                        href: ".../projeto"
+                        href: "https://github.com/LucasExpRocha/Explorer/tree/main/Stage09/Rocketnotes",
                     }
                 ]
             },
@@ -364,11 +364,7 @@ export const AllProjects = [
                 links: [
                     {
                         nameLink: "GitHub",
-                        href: ".../projeto1",
-                    },
-                    {
-                        nameLink: "Page",
-                        href: ".../projeto"
+                        href: "https://github.com/LucasExpRocha/Explorer/tree/main/Stage09/RocketMovies",
                     }
                 ]
             },
