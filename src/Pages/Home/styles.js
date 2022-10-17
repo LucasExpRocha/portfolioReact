@@ -28,7 +28,7 @@ export const Container = styled.div`
     flex-direction: column;
 
     height: 100%;
-    padding: 2rem 1.5rem 3rem;
+    padding: 2rem 1.5rem 4rem;
 
     transition: all 0.3s;
 
