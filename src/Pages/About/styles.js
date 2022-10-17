@@ -21,6 +21,10 @@ export const Container = styled.div`
         section {
             padding: 2rem 2rem 2rem;
             width: 100%;
+
+            label {
+                cursor: pointer;
+            }
         }
     }
 
