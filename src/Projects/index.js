@@ -421,6 +421,57 @@ export const AllProjects = [
                         href: "https://github.com/LucasExpRocha/DesafiosDiscover/tree/main/SocialTree",
                     }
                 ]
+            },
+            {
+                id: 3,
+                name: "RocketNews",
+                description: "Neste desafio foi proposto criar uma página web simples utilizando HTML e CSS que possa servir para captação de lead ou inscrição em newsletter.",
+                image: "https://user-images.githubusercontent.com/107315686/196437607-1eb5f94c-1e2a-4a31-80ee-c9a4649f78a9.png",
+                tools: [
+                    {
+                        nameTool: "CSS"
+                    },
+                    {
+                        nameTool: "HTML"
+                    }
+                ],
+                links: [
+                    {
+                        nameLink: "Pagina",
+                        href: "https://lucasexprocha.github.io/DesafiosDiscover/RocketNews/"
+                    },
+                    {
+                        nameLink: "GitHub",
+                        href: "https://github.com/LucasExpRocha/DesafiosDiscover/tree/main/RocketNews",
+                    }
+                ]
+            },
+            {
+                id: 4,
+                name: "Countdown",
+                description: "Neste desafio foi proposto criar uma página web de coming soon (em breve) para o lançamento de um site, produto ou serviço, a página deveria conter um countdown timer informando o tempo que falta.",
+                image: "https://user-images.githubusercontent.com/107315686/196437442-a9193ea5-ed05-407f-ab89-027328ed94c4.png",
+                tools: [
+                    {
+                        nameTool: "CSS"
+                    },
+                    {
+                        nameTool: "HTML"
+                    },
+                    {
+                        nameTool: "JavaScript"
+                    }
+                ],
+                links: [
+                    {
+                        nameLink: "Pagina",
+                        href: "https://lucasexprocha.github.io/DesafiosDiscover/CountDown/"
+                    },
+                    {
+                        nameLink: "GitHub",
+                        href: "https://github.com/LucasExpRocha/DesafiosDiscover/tree/main/CountDown",
+                    }
+                ]
             }
         ]
     },

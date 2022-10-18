@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import LogoImage from "../../assets/logo.svg";
-
 
 export const Container = styled.header`
     width: 100%;
@@ -118,6 +116,7 @@ export const Navigation = styled.nav`
 
         > #navMainMenuTrigger:checked ~ label::before {
             transform: rotate(90deg);
+            width: 2px;
         }
 
         > .navigationBar:hover,

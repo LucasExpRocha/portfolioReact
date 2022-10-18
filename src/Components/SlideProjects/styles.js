@@ -4,7 +4,7 @@ export const Carousel = styled.section`
   padding: 2rem 0;
 
    .swiper {
-    width: 90%;
+    width: 80%;
     padding-top: 1rem;
     padding-bottom: 4rem;
   }
@@ -63,15 +63,44 @@ export const Carousel = styled.section`
     }
   }
 
+  @media (min-width: 375px) {
+    .swiper-button-next, .swiper-button-prev {
+      background: rgba(0,0,0,.8);
+      width: 4rem;
+      border-radius: 50%;
+      height: 4rem;
+    }
+    .swiper-button-next {
+      right: 0;
+    }
+
+    .swiper-button-prev {
+      left: 0;
+    }
+  }
+
+
+
   @media (max-width: 375px) {
+    .swiper-button-next, .swiper-button-prev {
+        top: 90% !important;
+    }
+
+    .swiper-button-prev {
+        left: 3rem !important;
+    }
+    .swiper-button-next {
+        right: 3rem !important;
+    }
+
     .swiper {
-    width: 100%;
-  }
-  
-  .swiper-slide {
-    background-position: center;
-    object-fit: cover;
-    width: 70vw;
-  }
+      width: 100%;
+    }
+    
+    .swiper-slide {
+      background-position: center;
+      object-fit: cover;
+      width: 70vw;
+    }
   }
 `;

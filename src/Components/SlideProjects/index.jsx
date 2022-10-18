@@ -8,8 +8,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
-import { EffectCoverflow, Pagination } from "swiper";
+
+import { EffectCoverflow, Pagination, Navigation } from "swiper";
 
 export function SlideProjects({req}){
     return (
@@ -20,6 +22,7 @@ export function SlideProjects({req}){
                         <Carousel key={course.courseId}>
                             <h4>{course.courseName}</h4>
                             <Swiper
+                                navigation={true}
                                 effect={"coverflow"}
                                 grabCursor={true}
                                 centeredSlides={true}
@@ -32,8 +35,8 @@ export function SlideProjects({req}){
                                 modifier: 1,
                                 slideShadows: true,
                                 }}
-                                pagination={true}
-                                modules={[EffectCoverflow, Pagination]}
+                                pagination={false}
+                                modules={[EffectCoverflow, Pagination, Navigation]}
                                 className="mySwiper"
                             >
                                 {
