@@ -11,77 +11,50 @@ import origamidImg from "../../assets/origamidLogo.png"
 import rocketseatImg from "../../assets/rocketseatLogo.png"
 import LogoImage from "../../assets/lucasLogo.png";
 import Logo from "../../assets/logo.svg";
+import { useEffect, useRef } from "react";
 
 export function Header(){
-    const html = window.document.activeElement;
-    const outside = 'data-outside';
-    const events = ['touchstart', 'click'];
+    let menuRef = useRef();
 
-    function clickOutSide(e){
+    useEffect(() => {
+        let handler = (e) => {
+            console.log(!menuRef.current.contains(e.target))
+            if(!menuRef.current.contains(e.target)){
+                document.querySelector('#navMainMenuTrigger').checked = false;
+                document.querySelector('#navMenuLabel').checked = false;
+            }
+        }
         
-        if(e.checked && e.id == 'navMainMenuTrigger'){
-            let listMenuMobile = document.querySelector('.navigationBar')
+        document.addEventListener("click", handler);
 
-            setTimeout(() => {
-                events.forEach(e => html.addEventListener(e, handlOutsideClick))
-                listMenuMobile.setAttribute(outside, '')
-            },0 )
-
-            function handlOutsideClick(e) {
-                if(!listMenuMobile.contains(e.target)) {
-                    setTimeout(() => {
-                        document.querySelector('#navMainMenuTrigger').checked = false;
-                        listMenuMobile.removeAttribute(outside)
-                        events.forEach(e => html.removeEventListener(e, handlOutsideClick))
-
-                    },0)
-                }
-            }
+        return() =>{
+            document.removeEventListener("click", handler);
         }
-
-        if(e.checked && e.id == 'navMenuLabel'  && window.screen.availWidth > 1040){
-            let listMenuDesktop = document.querySelector('.menu')
-
-            setTimeout(() => {
-                events.forEach(e => html.addEventListener(e, handlOutsideClick))
-                listMenuDesktop.setAttribute(outside, '')
-            },0 )
-
-            function handlOutsideClick(e) {
-                if(!listMenuDesktop.contains(e.target)) {
-                    setTimeout(() => {
-                        document.querySelector('#navMenuLabel').checked = false;
-                        listMenuDesktop.removeAttribute(outside)
-                        events.forEach(e => html.removeEventListener(e, handlOutsideClick))
-                    },0)
-                }
-            }
-        }
-    }
+    })
 
     return  (
         <Container>
             <Link to="/">
                 <img src={Logo} alt="" />
             </Link>
-            <Navigation>
-                <input 
-                    onChange={e => clickOutSide(e.target)} 
-                    type="checkbox" 
-                    id="navMainMenuTrigger" 
-                />
-                <label  htmlFor="navMainMenuTrigger"><span>Menu</span></label>
+            <Navigation ref={menuRef}>
+                <input type="checkbox" id="navMainMenuTrigger"/>
+                <label htmlFor="navMainMenuTrigger"
+                    ><span>Menu</span>
+                </label>
                 <ul className="navigationBar" role="navigation">
                     <List address='/' title='Inicio' icon={FiHome}/>
                     <List address='/about' title='Sobre' icon={FiUserCheck}/>
                     <List address='/contact' title='Contato' icon={FiPhone}/>
                     <MenuLabel>
-                        <input 
-                            onChange={e => clickOutSide(e.target)} 
+                        <input
                             type="checkbox"
                             id="navMenuLabel" 
                         />
-                        <label  htmlFor="navMenuLabel"><span>Projetos</span><RiArrowDownSLine size={20}/></label>
+                        <label  htmlFor="navMenuLabel">
+                            <span>Projetos</span>
+                            <RiArrowDownSLine size={20}/>
+                        </label>
                         <ul className="menuMobile">
                             <List address='/projects/rocketseat' title='Curso Rocketseat'/>
                             <List address='/projects/origamid/1' title='Curso Origamid'/>
