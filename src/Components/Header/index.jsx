@@ -18,7 +18,6 @@ export function Header(){
 
     useEffect(() => {
         let handler = (e) => {
-            console.log(!menuRef.current.contains(e.target))
             if(!menuRef.current.contains(e.target)){
                 document.querySelector('#navMainMenuTrigger').checked = false;
                 document.querySelector('#navMenuLabel').checked = false;
